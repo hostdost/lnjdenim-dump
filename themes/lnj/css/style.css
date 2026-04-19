@@ -1,0 +1,162 @@
+/*Use this grid system for make responsive design easily*/
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	*behavior: url(boxsizing.htc);
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+body{
+	overflow-x:hidden;	
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, caption, canvas, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, form, footer, header, hgroup, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, main, small, span, strike, strong, sub, summary, sup, tt, table, tbody, textarea, tfoot, thead, time, tr, th, td, u, ul, var, video {
+	font-family: inherit;
+	font-size: 100%;
+	font-weight: inherit;
+	font-style: inherit;
+	vertical-align: baseline;
+	white-space: normal;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*	MAIN CONTAINER 
+	Set the width to whatever you want the width of your site to be. */
+
+
+.container {
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+/*	SELF CLEARING FLOATS - CLEARFIX METHOD */
+.container:after, .row:after, .col:after, .clr:after, .group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* 	DEFAULT ROW STYLES 
+	Set bottom padding according to preference */
+.row {
+	padding-bottom: 0em;
+	margin: 0 -10px;
+}
+
+/* DEFAULT COLUMN STYLES */
+.col {
+	display: block;
+	float: left;
+	width: 100%;
+	padding: 0 10px;
+	margin-bottom:20px;
+}
+
+
+
+
+@media only screen and (min-width : 768px) {
+	.span_1 {
+		width: 8.33333333333%;
+	}
+	.span_2 {
+		width: 16.6666666667%;
+	}
+	.span_3 {
+		width: 25%;
+	}
+	.span_4 {
+		width: 33.3333333333%;
+	}
+	.span_5 {
+		width: 41.6666666667%;
+	}
+	.span_6 {
+		width: 50%;
+	}
+	.span_7 {
+		width: 58.3333333333%;
+	}
+	.span_8 {
+		width: 66.6666666667%;
+	}
+	.span_9 {
+		width: 75%;
+	}
+	.span_10 {
+		width: 83.3333333333%;
+	}
+	.span_11 {
+		width: 91.6666666667%;
+	}
+	.span_12 {
+		width: 100%;
+	}
+
+}
+
+
+
+
+
+
+/*first media query 1px less than container width*/
+/*it is for greater than 1023px*/
+@media only screen and (max-width:1159px){
+	.container {
+		max-width: 100%;
+		margin: 0 auto;
+		padding:0 20px;
+	}
+}
+
+
+/*it is for greater than 768px and less than 1023px*/
+@media only screen and (max-width:1023px){
+	
+}
+
+/*it is for greater than 568px and less than 767px*/
+@media only screen and (max-width:767px){
+	
+}
+
+/*it is for greater than 320px and less than 567px*/
+@media only screen and (max-width:567px){
+	
+}
+
+
+
+header{
+	    background: #392926;
+    padding: 24px;
+	}
+
+
+
+
+section#hyperflex a, section#intelligence a, section#archive a {
+    cursor: default;
+}
